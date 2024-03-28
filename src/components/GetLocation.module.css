@@ -1,0 +1,121 @@
+/* Styles for the outer container */
+.outerDiv {
+  background-color: white;
+  color: black;
+  width: 350px;
+  padding: 10px 20px;
+  position: fixed;
+  top: 100px;
+  left: 40px;
+  z-index: 9999;
+}
+
+/* Styles for the welcome text */
+.welcomeText {
+  margin-bottom: 8px;
+}
+
+/* Styles for the name span */
+.name {
+  color: blue;
+}
+
+/* Styles for the location info container */
+.locInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Styles for the location logo */
+.locationLogo {
+  width: 40px;
+}
+
+/* Styles for the button */
+.bn13 {
+  display: inline-block;
+  padding: 0.65em 1.6em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  animation: bn13bouncy 5s infinite linear;
+  position: relative;
+  background-color: blue;
+  margin-left: 40px;
+}
+
+/* Hover styles for the button */
+.bn13:hover {
+  background-color: lightblue;
+  color: #000000;
+}
+
+/* Animation keyframes for the button */
+@keyframes bn13bouncy {
+  0% {
+      top: 0em;
+  }
+  40% {
+      top: 0em;
+  }
+  43% {
+      top: -0.9em;
+  }
+  46% {
+      top: 0em;
+  }
+  48% {
+      top: -0.4em;
+  }
+  50% {
+      top: 0em;
+  }
+  100% {
+      top: 0em;
+  }
+}
+
+/* Styles for the dark background overlay */
+.darkdiv {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+}
+
+/* Styles for the loader */
+.loader {
+  text-align: center;
+}
+
+/* Styles for the flashing dots in the loader */
+.dotflashing {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: blue;
+  animation: dot-animation 1s infinite;
+}
+
+/* Animation keyframes for the flashing dots */
+@keyframes dot-animation {
+  0%, 80%, 100% {
+      transform: scale(0);
+  }
+  40% {
+      transform: scale(1);
+  }
+}
