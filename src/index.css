@@ -1,3 +1,6 @@
+/* index.css */
+
+/* Global styles */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,67 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Header styling */
+.navbar {
+  background-color: #343a40; /* Dark background color */
+}
+
+.navbar-brand {
+  color: #fff; /* White text color */
+  font-size: 1.5rem; /* Larger font size */
+}
+
+.nav-link {
+  color: #fff; /* White text color */
+  font-size: 1.1rem; /* Medium font size */
+}
+
+.dropdown-menu {
+  background-color: #343a40; /* Dark background color for dropdown menu */
+}
+
+.dropdown-item {
+  color: #fff; /* White text color for dropdown items */
+}
+
+/* Header elements positioning */
+.container-fluid {
+  display: flex;
+  justify-content: space-between; /* Align elements to the ends */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Center the items vertically */
+}
+
+/* Location display */
+.address {
+  color: #fff; /* White text color */
+  font-size: 1.1rem; /* Medium font size */
+  margin-right: 20px; /* Add some space between elements */
+}
+
+/* Dropdown positioning */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em; /* Adjust the caret position */
+  vertical-align: 0.255em; /* Adjust the caret position */
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+}
+
+/* Dropdown menu positioning */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
 }
