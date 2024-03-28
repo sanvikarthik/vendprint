@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './DocumentUpload.module.css'; // Import CSS module
-import GetLocation from './GetLocation'; // Import GetLocation module
+import GetLocation from './GetLocation'
 
 
 function DocumentUpload() {
