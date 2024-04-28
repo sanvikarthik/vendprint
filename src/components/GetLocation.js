@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/location_on_FILL0_wght400_GRAD0_opsz24.png';
 import styles from './GetLocation.module.css';
+import curve from '../assets/svg.png'
 
 
 // The GetLocation component displays a welcome message and prompts the user to provide their location.
@@ -8,6 +9,7 @@ import styles from './GetLocation.module.css';
 const GetLocation = ({ children, getLocation}) => {
   return (
     <div>
+  
       {/* Dark background overlay */}
       <div className={styles.darkdiv}></div>
       {/* Outer container */}

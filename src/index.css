@@ -77,3 +77,8 @@ code {
   top: 100%;
   right: 0;
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

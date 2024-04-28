@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import DocumentUpload from './components/DocumentUpload';
 import PrintingOptions from './components/PrintingOptions';
 import PaymentInterface from './components/PaymentInterface';
+import Main from './Main';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
           <Route path="/printing-options" element={<PrintingOptions />} />
           <Route path="/payment" element={<PaymentInterface />} />
           {/* Assign DocumentUpload component to the root route */}
-          <Route path="/" element={<DocumentUpload />} />
+          <Route path="/" element={<Main/>} />
         </Routes>
       </div>
     </Router>
